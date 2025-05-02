@@ -79,6 +79,7 @@ body {
   margin-bottom: 15px;
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
+  -moz-text-decoration-color: var(--text-decoration-color);
 }
 
 .contact-info__sub-header {
@@ -169,6 +170,14 @@ body {
 .skills__text {
   color: var(--secondary-text-color);
   text-align: justify;
+}
+
+.skills__list {
+  color: var(--secondary-text-color);
+  margin: 30px;
+  padding-left: 30px;
+  border-left: 3px solid;
+  border-color: var(--text-decoration-color);
 }
 
 /*----------------------Experience and additional info styles--------------------------*/
@@ -264,4 +273,32 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+/*----------------------------Footer styles---------------------------------*/
+.footer {
+  padding: 0 20px 40px;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.footer-info__item {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+}
+
+.footer-info__item-icon path {
+  fill: var(--icon-color);
+}
+
+.footer-info__item-icon {
+  height: 1.1428rem;
+  vertical-align: text-bottom;
 }
